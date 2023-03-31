@@ -1,0 +1,9 @@
+[package]
+authors = [
+  "Hunar Roop Kahlon <hunar.roop@gmail.com>"
+]
+description = "A minecraft data and resource pack language."
+edition = "2021"
+name = "mcl"
+version = "0.0.0"
+
