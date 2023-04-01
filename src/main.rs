@@ -1,6 +1,7 @@
 use std::{error, fmt};
 
 mod advancement;
+mod cli;
 
 #[derive(Clone, Copy, Debug)]
 enum Gamemode {
@@ -34,5 +35,9 @@ trait Identifier<IdentifierType> {
 }
 
 fn main() -> Result<(), Box<dyn error::Error>> {
+    match cli::Cli::parse() {
+        Ok(_) => todo!(),
+        Err(e) => eprintln!("{e}"),
+    }
     Ok(())
 }
